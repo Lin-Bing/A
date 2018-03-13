@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "A"
-  s.version      = "1"
-  s.summary      = "A."
+  s.version      = "1.0"
+  s.summary      = "A业务"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "A/A/**/*.{h,m}"
+  s.source_files  = "A/{A,Targets}/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -131,7 +131,7 @@ Pod::Spec.new do |s|
   #  you can include multiple dependencies to ensure it works.
 
   s.requires_arc = true
-
+  s.dependency "B_Category"
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "BLNetworking"
   # s.dependency "BLAPIManagers"
